@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".OutputActivity">
 
     <Space
         android:layout_width="match_parent"
@@ -14,37 +14,30 @@
         android:layout_weight="1" />
 
     <TextView
-        android:id="@+id/result_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="30sp" />
+        android:text="@string/result"
+        android:id="@+id/game_result"/>
 
-    <RadioGroup
-        android:id="@+id/user_input"
+    <TextView
+        android:id="@+id/your_choice"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/paper"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/rock"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/scissors"/>
-    </RadioGroup>
+        android:layout_height="wrap_content"
+        android:text="@string/your_choice"/>
+
+    <TextView
+        android:id="@+id/computer_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/computer_choice"/>
 
     <Button
-        android:id="@+id/play_button"
+        android:id="@+id/play_again"
         style="@android:style/Widget.Material.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/small_gap"
-        android:text="@string/play" />
+        android:text="@string/play_again" />
 
     <Space
         android:layout_width="match_parent"

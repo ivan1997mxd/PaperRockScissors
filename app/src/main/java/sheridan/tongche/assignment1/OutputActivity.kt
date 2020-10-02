@@ -1,11 +1,9 @@
 package sheridan.tongche.assignment1
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.LayoutInflater
-import android.widget.Toast
 import sheridan.tongche.assignment1.databinding.ActivityOutputBinding
 
 class OutputActivity : AppCompatActivity() {
@@ -13,6 +11,7 @@ class OutputActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityOutputBinding
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityOutputBinding.inflate(layoutInflater)
@@ -32,7 +31,8 @@ class OutputActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun play(userChoice: String): String {
+    @SuppressLint("SetTextI18n")
+    private fun play(userChoice: String): String {
 
         val value = (0..2).random()
         val valueList = listOf("Paper", "Rock", "Scissors")

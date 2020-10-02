@@ -9,4 +9,5 @@
     <string name="your_choice">Your Choice:</string>
     <string name="computer_choice">Computer Choice</string>
     <string name="play_again">Play Again</string>
+    <string name="title">Welcome\n rock-paper-scissors</string>
 </resources>
